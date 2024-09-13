@@ -94,6 +94,34 @@ body{
     margin: 0 20px;
     width: 150px;
 }
+.Contendor-imagenes
+{
+    display: flex; /* Organiza el contenido en filas */
+    justify-content: center; /* Espacia los elementos entre sí */
+    align-items: center; /* Alinea verticalmente al inicio del contenedor */
+    width: 100%;
+    gap: 1em
+}
+.imagen-principal{
+
+    margin-top: 1em;
+    width: 95%;
+    height: 25em;
+    border: 0.5em;
+    border-color: rgb(230, 230, 230);
+    border-style: solid;
+    margin-left: 0.5rem;
+    
+   
+}
+.cursos{
+    align-items: center;
+    text-align: center;
+}
+.cursos-cupos{
+    border-style: solid;
+    border-color: white;
+}
 
 
 /*
