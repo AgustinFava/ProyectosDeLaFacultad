@@ -1,11 +1,14 @@
-body{ 
-    font-size: 16px; /*1rem = 10px*/
-    font-family: "Krub", sans-serif; /*Lo que aplique en el body se va aplicar a todos los elementos, en este caso la fuente de los textos*/
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
     background-image: url(../img/FondoPlataformaDeCursosAlternativo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Navegacion Principal */
@@ -96,11 +99,10 @@ body{
 }
 .Contendor-imagenes
 {
-    display: flex; /* Organiza el contenido en filas */
-    justify-content: center; /* Espacia los elementos entre sí */
-    align-items: center; /* Alinea verticalmente al inicio del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    gap: 1em
 }
 .imagen-principal{
 
@@ -121,28 +123,29 @@ body{
     margin-top: 100px;
     font-weight: 100;
 }
-.container{
+.container {
     width: 100%;
-   max-width: 1200px;
-   height: 430px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: auto
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px; /* Para que no se choque con medios de pago */
 }
 .container .card{
     width: 27%;
-    height: 90%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: right;
-    margin: 2%;
+    margin: 2% 1% 2% 1%; /* Ajusta los márgenes si es necesario */
     transition: all 0.25s;
     padding-right: 1%;
     background-color: rgb(240, 230, 230);
     border-color: black;
     border-style: groove;
+
 
 }
 .container .card:hover{
@@ -193,16 +196,87 @@ body{
     display: inline;
 }
 
-.pago{
+.pago {
     text-align: center;
     font-size: 40px;
     color: black;
     margin-top: 100px;
     font-weight: 100;
+}
+.imagen-hero {
+        margin-top: 1em;
+        width: 25%;
+        height: auto;
+        border: 0.2em;
+        border-color: rgb(230, 230, 230);
+        border-style: solid;
+        margin-left: 0.5rem;
+        display: inline;
+        align-items: center;
+    }
 
+footer {
+    background-color: #c5c5c5;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    clear: both;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
 /*
 .degradado{
     position: absolute;
